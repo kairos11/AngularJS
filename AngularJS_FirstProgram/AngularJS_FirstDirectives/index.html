@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta charset="utf-8" />-->
+    <title>AngularJS First Program with Directives</title>
+    <script src="scripts/angular.js"></script>
+</head>
+<body>
+    <h1>Sample Application</h1>
+    <div ng-app="">
+        <!--ng-model is use on controls; ng-bind use on tag-->
+        <p>Enter your Name:<input type="text" ng-model="name" /></p>
+        <p>Hello <span ng-bind="name"></span>!</p>
+    <table border="0">
+        <tr>
+            <td><input type="checkbox" ng-model="isDisabled"/></td>
+            <td><button ng-disabled="isDisabled">Click Me!</button></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" ng-model="isShow"/></td>
+            <td><button ng-show="isShow">Click Me!</button></td>
+        </tr>
+        <tr>
+            <td><p>Total clickcounter is: <span ng-bind="counterMe"></span></p></td>
+            <td><button ng-model="counterMe" ng-click="counterMe = counterMe + 1">Click + </button></td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
