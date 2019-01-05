@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Form Validations</title>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/script.js"></script>
+    <style>
+        input.ng-invalid { /*if the input is in invalid state*/
+            background-color: yellow;
+        }
+
+        input.ng-valid { /*if the input is in valid state*/
+            background-color: lawngreen;
+        }
+
+        form.ng-pristine { /*if the form is not yet touched or selected even once*/
+            background-color: aqua;
+        }
+
+        form.ng-dirty { /*if the form is already touched or selected*/
+            background-color: mediumaquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h2>AngularJS Sample Form Validations</h2>
+    <div ng-app="myModule" ng-controller="formController">
+        <form name="studentForm">
+            <!--<input name="myName" ng-model="myName" placeholder="Enter Your Name" required />-->
+            <table border="0">
+                <tr>
+                    <td> Enter your First Name</td>
+                    <td>
+                        <input name="firstName" type="text" ng-model="firstName" ng-minlength="3" ng-maxlength="25" required />
+                        <span style="color:red">
+                            <span ng-show="studentForm.firstName.$error.required">First Name is required.</span>
+                            <span ng-show="studentForm.firstName.$error.minglength">First Name is too short!</span>
+                            <span ng-show="studentForm.firstName.$error.maxlength">First Name is too long!</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Enter your Last Name</td>
+                    <td>
+                        <input name="lastName" type="text" ng-model="lastName" ng-minlength="2" ng-maxlength="30" required />
+                        <span style="color:red">
+                            <span ng-show="studentForm.lastName.$error.required">Last Name is required.</span>
+                            <span ng-show="studentForm.lastName.$error.minlenght">Last Name is too short!</span>
+                            <span ng-show="sutdentForm.lastName.$error.maxlenght">Last Name is too long!</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter you Email</td>
+                    <td>
+                        <input name="email" type="email" ng-model="email" required />
+                        <span style="color:red">
+                            <span ng-show="studentForm.email.$error.required">Email is required.</span>
+                            <span ng-show="studentForm.email.$error.email">Invalid email.</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button ng-click="reset()">Reset</button>
+                    </td>
+                    <td>
+                        <button ng-disabled="studentForm.firstName.$invalid || studentForm.lastName.$invalid || sutdentForm.email.$invalid"
+                                ng-click="submit()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
