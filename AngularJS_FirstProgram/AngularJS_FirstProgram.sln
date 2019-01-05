@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_FirstProgram", "A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_FirstDirectives", "AngularJS_FirstDirectives\AngularJS_FirstDirectives.csproj", "{1D19883C-8E74-4094-8FF7-43E40C638017}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Expressions", "AngularJS_Expressions\AngularJS_Expressions.csproj", "{6149A63B-8BD1-4B11-90E5-21DE98D85C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Controller", "AngularJS_Controller\AngularJS_Controller.csproj", "{43F995F8-FBE3-4221-AC43-5D6565C740E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1D19883C-8E74-4094-8FF7-43E40C638017}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D19883C-8E74-4094-8FF7-43E40C638017}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D19883C-8E74-4094-8FF7-43E40C638017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6149A63B-8BD1-4B11-90E5-21DE98D85C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6149A63B-8BD1-4B11-90E5-21DE98D85C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6149A63B-8BD1-4B11-90E5-21DE98D85C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6149A63B-8BD1-4B11-90E5-21DE98D85C32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F995F8-FBE3-4221-AC43-5D6565C740E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F995F8-FBE3-4221-AC43-5D6565C740E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F995F8-FBE3-4221-AC43-5D6565C740E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F995F8-FBE3-4221-AC43-5D6565C740E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

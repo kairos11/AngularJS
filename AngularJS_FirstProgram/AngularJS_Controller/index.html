@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Expressions</title>
+    <script src="scripts/angular.js"></script> <!--Must be first otherwise the 2nd item /script.js will now work-->
+    <script src="scripts/script.js"></script>
+    <style>
+        h1 {
+            color: blue;
+            font-family: verdana;
+            font-size: 150%;
+        }
+
+        p {
+            color: black;
+            font-family: courier;
+            font-size: 90%;
+        }
+
+        th {
+            color: darkgreen;
+            font-family: courier;
+            font-size: 120%;
+        }
+
+        td {
+            color: black;
+            font-family: courier;
+            font-size: 90%;
+        }
+
+        .auto-style1 {
+            width: 300px
+        }
+
+        .auto-style2 {
+            width: 250px
+        }
+    </style>
+</head>
+<body ng-app="myModule">
+    <div ng-controller="firstController">
+        <p>{{message}}</p>
+    </div>
+    <div ng-controller="dataController">
+        <input type="text" ng-model="search.firstName" /><br />
+        <input type="text" ng-model="search.salary" /><br />
+
+        <table style="width: 500px; border:2px solid black;">
+            <thead>
+                <tr style="text-align:left">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat=" employee in employees | filter:search | orderBy: 'salary'">
+                    <td>{{employee.firstName | uppercase}}</td>
+                    <td>{{employee.lastName | lowercase}}</td>
+                    <td>{{employee.gender | uppercase}}</td>
+                    <td>{{employee.salary | currency: "P"}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
