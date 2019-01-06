@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Juan",
+    "lastName": "Dela Cruz",
+    "gender": "Male",
+    "salary": 35000
+  },
+  {
+    "firstName": "Juana",
+    "lastName": "Dela Cruz",
+    "gender": "Female",
+    "salary": 40000
+  },
+  {
+    "firstName": "Julio",
+    "lastName": "Dela Cruz",
+    "gender": "Male",
+    "salary": 41000
+  },
+  {
+    "firstName": "Jula",
+    "lastName": "Dela Cruz",
+    "gender": "Female",
+    "salary": 45000
+  },
+  {
+    "firstName": "Juaning",
+    "lastName": "Dela Cruz",
+    "gender": "Female",
+    "salary": 50000
+  }
+]

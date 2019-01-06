@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Controller", "Ang
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_FormValidations", "AngularJS_FormValidations\AngularJS_FormValidations.csproj", "{4A379425-A4E3-4AFA-87E0-4AC4518610D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_Includes", "AngularJS_Includes\AngularJS_Includes.csproj", "{566A6C5B-531B-4860-956E-21EF2EF4C676}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJS_AJAX", "AngularJS_AJAX\AngularJS_AJAX.csproj", "{4E652858-EC49-4E32-89A7-4C50BC40F93E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{4A379425-A4E3-4AFA-87E0-4AC4518610D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A379425-A4E3-4AFA-87E0-4AC4518610D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A379425-A4E3-4AFA-87E0-4AC4518610D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{566A6C5B-531B-4860-956E-21EF2EF4C676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566A6C5B-531B-4860-956E-21EF2EF4C676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566A6C5B-531B-4860-956E-21EF2EF4C676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566A6C5B-531B-4860-956E-21EF2EF4C676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E652858-EC49-4E32-89A7-4C50BC40F93E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E652858-EC49-4E32-89A7-4C50BC40F93E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E652858-EC49-4E32-89A7-4C50BC40F93E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E652858-EC49-4E32-89A7-4C50BC40F93E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
