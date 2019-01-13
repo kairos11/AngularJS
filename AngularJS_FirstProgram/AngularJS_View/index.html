@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <h1>AngularJS View</h1>
+    <div ng-app="mainApp">
+        <p><a href="#home">Home</a></p>
+        <p><a href="#contacts">Contact Us</a></p>
+        <div ng-view></div> <!--required when using route-->
+    </div>
+</body>
+</html>
